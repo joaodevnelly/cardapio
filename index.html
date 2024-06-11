@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pensão da Glória - Cardápio</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="shortcut icon" href="logo icon.ico" type="favicon">
+    <script src="script.js"></script>
+</head>
+<body>
+    <div class="container">
+        <header class="header-content">
+            <div class="logo">
+                <img src="Pensão Da Glória (1).png" alt="Logo do Restaurante">
+            </div>
+            <div class="restaurant-info">
+                <h1>Pensão da Glória</h1>
+                <p>Endereço: Rua do Restaurante, 123 - Bairro - Cidade</p>
+                <p>Telefone: (00) 1234-5678</p>
+                <a href="/">
+                <img src="icons8-instagram-50.png" alt="instagram" width="40" height="40">
+            </a>
+            <a href="/">
+                <img src="icons8-whatsapp-50.png" alt="whatsapp" width="40" height="40">
+            </a>
+            </div>
+        </header>
+        <nav class="navbar">
+            <ul>
+                <li><a href="#pratos">Pratos</a></li>
+                <li><a href="#bebidas">Bebidas</a></li>
+                <li><a href="#sobremesas">Sobremesas</a></li>
+                <li><a href="#sucos">Sucos</a></li>
+                <li><a href="#combos">Combos</a></li>
+            </ul>
+        </nav>
+
+        <section id="pratos">
+            <h2 onclick="toggleList('pratos')">Pratos <span class="arrow">▼</span></h2>
+            <ul class="options-list hidden">
+                <li class="item">
+                    <div class="item-image" style="background-image: url(frango.jpg);"></div>
+                    <div class="item-info">
+                        <h3>Filé de Frango Grelhado</h3>
+                        <p>Filé de peito de frango, arroz,feijão e farofa</p>
+                        <p class="price">R$ 19,90</p> 
+                    </div>
+                </li>
+                <li class="item">
+                    <div class="item-image" style="background-image: url(omelete.jpg);"></div>
+                    <div class="item-info">
+                        <h3>Omelete</h3>
+                        <p>O famoso e muito gostoso omelete</p>
+                        <p class="price">R$ 15,90</p> 
+                    </div>
+                </li>
+                <li class="item">
+                    <div class="item-image" style="background-image: url(lasanha.jpg);"></div>
+                    <div class="item-info">
+                        <h3>Lasanha</h3>
+                        <p>350g de lasanha com recheio de queijo e molho bolonhesa</p>
+                        <p class="price">R$ 17,90</p> 
+                    </div>
+                </li>
+                <li class="item">
+                    <div class="item-image" style="background-image: url(churrasco.jpg);"></div>
+                    <div class="item-info">
+                        <h3>Churrasco</h3>
+                        <p>150g Carne,linguiça e drumet,com arroz,feijão,molho a campanha e farofa</p>
+                        <p class="price">R$ 34,90</p> 
+                    </div>
+                </li>
+            </ul>
+        </section>
+
+        <section id="bebidas">
+            <h2 onclick="toggleList('bebidas')">Bebidas <span class="arrow">▼</span></h2>
+            <ul class="options-list hidden">
+                <li class="item">
+                    <div class="item-image" style="background-image: url(coca.jpg);"></div>
+                    <div class="item-info">
+                        <h3>Coca-cola</h3>
+                        <p>Refrigerante lata 350ml coca-cola gelado</p>
+                        <p class="price">R$ 5,50</p> 
+                    </div>
+                </li>
+                <li class="item">
+                    <div class="item-image" style="background-image: url(pepsi.jpg);"></div>
+                    <div class="item-info">
+                        <h3>Pepsi</h3>
+                        <p>Refrigerante lata 350ml pepsi gelado</p>
+                        <p class="price">R$ 4,90</p> 
+                    </div>
+                </li>
+                <li class="item">
+                    <div class="item-image" style="background-image: url(cervejas.jpg);"></div>
+                    <div class="item-info">
+                        <h3>Cerveja</h3>
+                        <p>Latão de 473ml brahma ou antartica</p>
+                        <p class="price">R$ 5,99</p> 
+                    </div>
+                </li>
+                <li class="item">
+                    <div class="item-image" style="background-image: url(vinho.jpg);"></div>
+                    <div class="item-info">
+                        <h3>Vinho</h3>
+                        <p>Garrafa de 1L Pérgola</p>
+                        <p class="price">R$ 28,90/p> 
+                    </div>
+                </li>
+            </ul>
+        </section>
+
+        <section id="sobremesas">
+            <h2 onclick="toggleList('sobremesas')">Sobremesas <span class="arrow">▼</span></h2>
+            <ul class="options-list hidden">
+                <li class="item">
+                    <div class="item-image" style="background-image: url(sorvete.jpg);"></div>
+                    <div class="item-info">
+                        <h3>Sorvete</h3>
+                        <p>Uma bola de sorvete da sua preferencia, com calda de chocolate e complementos</p>
+                        <p class="price">R$ 7,99</p> 
+                    </div>
+                </li>
+                <li class="item">
+                    <div class="item-image" style="background-image: url(bolo\ de\ chocolate.jpg);"></div>
+                    <div class="item-info">
+                        <h3>Bolo de Chocolate</h3>
+                        <p>Fatia grande de bolo de chocolate com cobertura cremosa</p>
+                        <p class="price">R$ 12,90</p> 
+                    </div>
+                </li>
+                <li class="item">
+                    <div class="item-image" style="background-image: url(pudim.jpg);"></div>
+                    <div class="item-info">
+                        <h3>Pudim</h3>
+                        <p>Pote de Pudim de leite condensado com calda de caramelo</p>
+                        <p class="price">R$ 11,99</p> 
+                    </div>
+                </li>
+            </ul>
+        </section>
+
+        <section id="sucos">
+            <h2 onclick="toggleList('sucos')">Sucos <span class="arrow">▼</span></h2>
+            <ul class="options-list hidden">
+                <li class="item">
+                    <div class="item-image" style="background-image: url(laranja.jpg);"></div>
+                    <div class="item-info">
+                        <h3>Suco de Laranja</h3>
+                        <p>Copo suco de laranja natural</p>
+                        <p class="price">R$ 9,90</p> 
+                    </div>
+                </li>
+                <li class="item">
+                    <div class="item-image" style="background-image: url(maracuja.jpg);"></div>
+                    <div class="item-info">
+                        <h3>Suco de Maracujá</h3>
+                        <p>Copo de suco de maracujá natural</p>
+                        <p class="price">R$ 9,90</p> 
+                    </div>
+                </li>
+                <li class="item">
+                    <div class="item-image" style="background-image: url(abacaxi.jpg);"></div>
+                    <div class="item-info">
+                        <h3>Suco de Abacaxi</h3>
+                        <p>Copo de Suco de abacaxi natural</p>
+                        <p class="price">R$ 9,90</p> 
+                    </div>
+                </li>
+            </ul>
+        </section>
+
+        <section id="combos">
+            <h2 onclick="toggleList('combos')">Combos <span class="arrow">▼</span></h2>
+            <ul class="options-list hidden">
+                <li class="item">
+                    <div class="item-image" style="background-image: url(combo.jpg);"></div>
+                    <div class="item-info">
+                        <h3>Combo 1</h3>
+                        <p>Porções de frango empanado,frango a passarinho e nuggets</p>
+                        <p class="price">R$ 49,99</p> 
+                    </div>
+                </li>
+                <li class="item">
+                    <div class="item-image" style="background-image: url(combo2.jpg);"></div>
+                    <div class="item-info">
+                        <h3>Combo 2</h3>
+                        <p>Porção média de batatas fritas com um Hamburguer</p>
+                        <p class="price">R$ 34,99</p> 
+                    </div>
+                </li>
+            </ul>
+        </section>
+
+        <footer class="footer">
+            <div class="footer-content">
+                <p>© 2024 Pensão da Glória. Todos os direitos reservados.</p>
+                <p>Criado por Joãodevnelly</p>
+            </div>
+        </footer>
+    </div>
+</body>
+</html>
